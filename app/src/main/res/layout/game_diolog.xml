@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="350dp"
+    android:background="@drawable/background_blurred"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/scores_txt" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="80dp"
+        android:layout_below="@id/imageView"
+        android:fontFamily="@font/chrusty"
+        android:text="000"
+        android:textAlignment="center"
+        android:textColor="#fcb942"
+        android:textSize="70sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textview">
+
+        <ImageView
+            android:id="@+id/diolog_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/diolog_home" />
+
+        <ImageView
+            android:id="@+id/diolog_restart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:src="@drawable/diolog_restart" />
+
+        <ImageView
+            android:id="@+id/diolog_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/diolog_share" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
